@@ -4,7 +4,7 @@ import readline
 text = raw_input('Input Persian Text: ')
 
 MyList = [
-('َ', 'a'),('ِ', 'e'),
+('َ', 'a')('ِ', 'e'),
 ('ُ', 'o'),
 ('ء','\''),
 ('أ','\''),
@@ -69,7 +69,7 @@ MyList = [
 ('w','u'),(' u ',' va '),
 ('uie','uye'),
 ('uâ','u'),
-('khuh','khâh'),
+('khuh','khâh')
 ]
 
 for k,v in MyList:
