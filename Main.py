@@ -4,7 +4,8 @@ import readline
 text = raw_input('Input Persian Text: ')
 
 MyList = [
-('َ', 'a')('ِ', 'e'),
+('َ', 'a'),
+('ِ', 'e'),
 ('ُ', 'o'),
 ('ء','\''),
 ('أ','\''),
