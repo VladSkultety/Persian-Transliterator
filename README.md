@@ -1,5 +1,5 @@
 # Persian-Transliterator
-A code transliterating the Persian script into the Roman Alphabet. 
+A code transliterating the Persian script into the Roman Alphabet. Work in progress.
 
 I would like the code to do this:
 
@@ -40,3 +40,6 @@ Output: هَر یه ساعَت یه قَطار به شَهر هَست
 Input: هَر یه ساعَت یه قَطار به شَهر هَست
 
 Output: har ye sâ`at ye qatâr be šahr hast
+
+Currently, the code only does simple substitution, iterating over a list using a for loop.
+It's faulty and complicated to make it work so In the future I would like to try to code a neural network to do the same.
