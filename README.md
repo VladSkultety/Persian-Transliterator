@@ -14,7 +14,7 @@ Right now it does this:
 
 Input: هَر یه ساعَت یه قَطار به شَهر هَست
 
-Output: hَr yeh sâ'َt yeh qَtâr bh šَhr hَst.
+Output: har ih sâ'at ih qatâr be šahr hast.
 
 
 Eventually I would love the code to transliterate Persian text without vowel markers like this:
@@ -25,21 +25,9 @@ Input: هر یه ساعت یه قطار به شهر هست
 Output: har ye sâ`at ye qatâr be šahr hast.
 
 
-I'm guessing the way this could be done is:
+Based on the following paper, it seems like building a neural net is the only way to go:
 
-1) First convert the non-vowel marked text to a vowel marked text:
-
-
-Input: هر یه ساعت یه قطار به شهر هست
-
-Output: هَر یه ساعَت یه قَطار به شَهر هَست
-
-
-2) Convert the vowel marked text into Roman letters:
-
-Input: هَر یه ساعَت یه قَطار به شَهر هَست
-
-Output: har ye sâ`at ye qatâr be šahr hast
+https://www.researchgate.net/publication/312564526_Persian_sentences_to_phoneme_sequences_conversion_based_on_recurrent_neural_networks
 
 Currently, the code only does simple substitution, iterating over a list using a for loop.
-It's faulty and complicated to make it work so In the future I would like to try to code a neural network to do the same.
+It's faulty and complicated to make it work because of the many Persian reading rules and exceptions. Often a new substitution rule messes up a previous substitution rule.
