@@ -31,3 +31,10 @@ https://www.researchgate.net/publication/312564526_Persian_sentences_to_phoneme_
 
 Currently, the code only does simple substitution, iterating over a list using a for loop.
 It's faulty and complicated to make it work because of the many Persian reading rules and exceptions. Often a new substitution rule messes up a previous substitution rule.
+
+How to use:
+
+1) Clone the code to your computer.
+2) Copy-paste the Persian text you want to transliterate into PersianText.txt and save.
+3) Run code.
+4) PersianText.txt will now contain the same text you copy pasted, transliterated using Roman letters.

@@ -1,9 +1,11 @@
 #coding: utf-8 -*-
-import readline
 
-text = raw_input('Input Persian Text: ')
+PersianText = open("PersianText.txt", "r")
+
+InternalText = PersianText.read()
 
 MyList = [
+
 #Diacritical marks
 ('َ', 'a'),
 ('ِ', 'e'),
@@ -178,6 +180,13 @@ MyList = [
 ]
 
 for k,v in MyList:
-    text = text.replace(k, v)
+    InternalText = InternalText.replace(k, v)
 
-print ("\n\n\n"), text
+PersianText.close()
+
+#Write PersianText.txt file with transliterated Persian. #Need to close and open
+#PersianText again.
+
+WriteFile = open("PersianText.txt", "w")
+WriteFile.write(InternalText)
+WriteFile.close()
